@@ -1,4 +1,3 @@
-"use strict";
 const MongoClient = require("mongodb").MongoClient;
 const url = process.env.MONGODB_URI;
 const client = new MongoClient(url, {

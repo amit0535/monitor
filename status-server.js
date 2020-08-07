@@ -12,6 +12,6 @@ app.get("*", async function (req, res) {
   res.json({ status: "INVALID_URL", message: "Please set correct endpoint." });
 });
 
-app.listen(3000, function () {
+app.listen(3001, function () {
   console.log("NodeJS API Server running at 3000");
 });
