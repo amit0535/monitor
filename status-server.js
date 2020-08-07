@@ -2,9 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const status = require("./inc/status");
 const app = express();
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-})); 
+app.use(express.urlencoded());
 app.get("/status", async function (req, res) {});
 app.post("/status", async function (req, res) {
   status.setStatus(req);
