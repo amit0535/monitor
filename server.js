@@ -1,6 +1,6 @@
 const express = require("express");
 const status = require("./inc/status");
-
+require("dotenv").config();
 const app = express();
 app.get("/status", async function (req, res) {});
 app.post("/status", async function (req, res) {
