@@ -2,7 +2,7 @@ const mongo = require("./Mongo.js");
 module.exports = {
   setStatus: async function (req) {
     const db = await mongo.getConnection();
-    const { service, success } = req;
+    const { service, success } = req.query;
     await db.collection("status").findOneAndUpdate(
       {
         service: service,
