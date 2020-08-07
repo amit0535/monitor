@@ -3,6 +3,7 @@ module.exports = {
   setStatus: async function (req) {
     const db = await mongo.getConnection();
     const { service, success } = req.query;
+    console.log(req.query);
     await db.collection("status").findOneAndUpdate(
       {
         service: service,
