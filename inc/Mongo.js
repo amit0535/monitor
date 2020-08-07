@@ -1,5 +1,5 @@
 const MongoClient = require("mongodb").MongoClient;
-console.log( process.env.MONGODB_URI);
+//console.log( process.env.MONGODB_URI);
 const url = process.env.MONGODB_URI;
 const client = new MongoClient(url, {
   useUnifiedTopology: true,
